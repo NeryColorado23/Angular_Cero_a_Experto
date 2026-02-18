@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
     width: 75px;
   }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  //changeDetection: ChangeDetectionStrategy.OnPush
 
 })
 
@@ -24,9 +24,11 @@ export class CounterPageComponent {
  counterSignal = signal(10);
 
  constructor() {
-  setInterval(() => {
-    console.log('tick');
-  },2000);
+  //setInterval(() => {
+    //this.counter += 1;
+   // this.counterSignal.update( (v) => v + 1);
+    //console.log('tick');
+ // },2000);
  }
 
  increaseBy(value: number){
