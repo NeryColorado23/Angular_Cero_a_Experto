@@ -1,7 +1,11 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
 
 @Component({
   templateUrl: './hero-page.component.html',
+
+  //usare pipes para mostrar el nombre en mayusculas
+  imports: [UpperCasePipe]
 })
 
 export class HeroPageComponent {
